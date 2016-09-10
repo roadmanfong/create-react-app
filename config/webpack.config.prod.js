@@ -168,7 +168,7 @@ module.exports = {
       // resources linked with <link href="./relative/path"> HTML tags.
       {
         test: /\.html$/,
-        loader: 'html',
+        loader: 'html?interpolate=require',
         query: {
           attrs: ['link:href'],
         }
